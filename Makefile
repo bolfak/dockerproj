@@ -17,7 +17,7 @@ run-circleci-local:
 
 
 lint:
-	sudo hadolint Dockerfile
+	hadolint Dockerfile
 	pylint --disable=R,C,W1203 app.py
 
 all: install lint test
